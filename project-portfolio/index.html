@@ -8,10 +8,8 @@
     <!-- css link -->
     <link rel="stylesheet" href="./asset/css/style.css">
 
-    <!--
-    - favicon
-  -->
-  <!-- <link rel="" href="./assets/images/" type="image/x-icon"> -->
+    <!--- favicon -->
+    <!-- <link rel="" href="./assets/images/" type="image/x-icon"> -->
 
 </head>
 
@@ -31,28 +29,245 @@
                 <button class="info_more-btn" data-sidebar-btn>
                     <span>Show Contacts</span>
                     
-                    <!-- ion0-icon -->
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
             </div>
 
             <div class="sidebar-info_more">
 
                 <div class="separator"></div>
-                <ul>
-                    <li>Email</li>
-                    <li>Phone</li>
-                    <li>Birthday</li>
-                    <li>Location</li>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:mohamadfauzisetiawan@gmail.com" class="contact-link">mohamadfauzisetiawan@gmail.com</a>
+                        </div>
+                        </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+              
+                            <a href="tel:+6282232309918" class="contact-link">+62 (822) 3230-9918</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+              
+                            <time datetime="1994-16-06">Desember 06, 1994</time>
+                          </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+              
+                            <address>Malang, East Java, IND</address>
+                          </div>
+                    </li>
                 </ul>
 
+                <ul class="social-list">
 
+                    <li class="social-item">
+                      <a href="#" class="social-link">
+                        <ion-icon class = "socials-icons" name="logo-facebook"></ion-icon>
+                      </a>
+                    </li>
+          
+                    <li class="social-item">
+                      <a href="#" class="social-link">
+                        <ion-icon class = "socials-icons" name="logo-twitter"></ion-icon>
+                      </a>
+                    </li>
+          
+                    <li class="social-item">
+                      <a href="#" class="social-link">
+                        <ion-icon class = "socials-icons" name="logo-instagram"></ion-icon>
+                      </a>
+                    </li>
+          
+                </ul>
             </div>
         </aside>
+
+        <!--- #main-content -->
+
         <div class="main-content">
-            tengah
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li>
+                            <h4 class="h4 timeline-item-title">University school Malang</h4>
+                            <span>2012 - 2017</span>
+                            <p class="timeline-text">
+                                qkwjhejiqwhmxcnnjbwqjheo;wqjhkkmsandkmnsabfjsdhjwqenwqbjwq
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4 class="h4 timeline-item-title">High school of Malang</h4>
+                            <span>2010 - 2012</span>
+                            <p class="timeline-text">
+                                qkwjhejiqwhmxcnnjbwqjheo;wqjhkkmsandkmnsabfjsdhjwqenwqbjwq
+                            </p>
+                        </li>
+
+                    </ol>
+                </section>
+
+                
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                          <ion-icon name="book-outline"></ion-icon>
+                        </div>
+            
+                        <h3 class="h3">Experience</h3>
+                      </div>
+                      <ol class="timeline-list">
+    
+                        <li class="timeline-item">
+            
+                          <h4 class="h4 timeline-item-title">Librarian</h4>
+            
+                          <span>2023 — Present</span>
+            
+                          <p class="timeline-text">
+                            Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                            molestias
+                            exceptur.
+                          </p>
+            
+                        </li>
+            
+                        <li class="timeline-item">
+            
+                          <h4 class="h4 timeline-item-title">Junior Operation</h4>
+            
+                          <span>2018 — 2023</span>
+            
+                          <p class="timeline-text">
+                            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                            quas molestias
+                            exceptur.
+                          </p>
+            
+                        </li>
+                      </ol>
+                </section>
+
+                <section class="skill">
+                    
+                        <h3 class="h3 skills-title">My skills</h3>
+                    
+
+                        <ul class="skills-list content-card">
+
+                            <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Web design</h5>
+                                <data value="20">20%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 20%;"></div>
+                            </div>
+
+                            </li>
+
+                            <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Graphic design</h5>
+                                <data value="35">35%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 35%;"></div>
+                            </div>
+
+                            </li>
+
+                            <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Frontend</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+
+                            </li>
+
+                            <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">React</h5>
+                                <data value="50">50%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 50%;"></div>
+                            </div>
+
+                            </li>
+
+                            <li class="skills-item">
+
+                                <div class="title-wrapper">
+                                    <h5 class="h5">Backend</h5>
+                                    <data value="10">10%</data>
+                                </div>
+    
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" style="width: 10%;"></div>
+                                </div>
+    
+                            </li>
+                        </ul>
+                </section>
+
+            </article> 
         </div>
     </main>
     
     <!-- js link -->
     <script src="./asset/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
