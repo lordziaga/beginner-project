@@ -33,19 +33,22 @@
 
                 <div class="info-content">
                     <h1 class="name" title="mohamadfauzisetiawan">M Fauzi Setiawan</h1>
-                    <p class="title">Web Developer</p>
+                    <div class="title-container">
+                    <div class="title">Frontend Developer</div>
+                    <p class="title">Librarian</p>
+                    <p class="title">Staff Management</p>
+                    </div>
                 </div>
-
+                  
                 <button class="info_more-btn" data-sidebar-btn>
                     <span>Show Contacts</span>
                     
                     <ion-icon name="chevron-down"></ion-icon>
                 </button>
             </div>
-
+            <div class="separator"></div>
             <div class="sidebar-info_more">
 
-                <div class="separator"></div>
                 <ul class="contacts-list">
                     <li class="contact-item">
                         <div class="icon-box">
@@ -90,7 +93,7 @@
                           </div>
                     </li>
                 </ul>
-
+                <div class="separator"></div>
                 <ul class="social-list">
 
                     <li class="social-item">
@@ -148,9 +151,7 @@
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -431,7 +432,7 @@
 
           <!--- #PORTFOLIO --->
 
-            <article class="portfolio" data-page="portfolio">
+          <article class="portfolio" data-page="portfolio">
 
             <header>
               <h2 class="h2 article-title">Portfolio</h2>
@@ -439,49 +440,97 @@
     
             <section class="projects">
     
+              <ul class="filter-list">
+    
+                <li class="filter-item">
+                  <button class="active" data-filter-btn>All</button>
+                </li>
+    
+                <li class="filter-item">
+                  <button data-filter-btn>Web design</button>
+                </li>
+    
+                <li class="filter-item">
+                  <button data-filter-btn>Web development</button>
+                </li>
+    
+              </ul>
+    
+              <div class="filter-select-box">
+    
+                <button class="filter-select" data-select>
+    
+                  <div class="select-value" data-selecct-value>Select category</div>
+    
+                  <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                  </div>
+    
+                </button>
+    
+                <ul class="select-list">
+    
+                  <li class="select-item">
+                    <button data-select-item>All</button>
+                  </li>
+    
+                  <li class="select-item">
+                    <button data-select-item>Web design</button>
+                  </li>
+    
+                  <li class="select-item">
+                    <button data-select-item>Web development</button>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
               <ul class="project-list">
     
-                <li class="project-item  active" data-filter-item data-category="web development">
-                  
+                <li class="project-item  active" data-filter-item data-category="web design">
+                  <a href="../disbek-web/index.html">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./asset/images/web-design.jpg" alt="finance" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">Disbek Website</h3>
+    
+                    <p class="project-category">Web design</p>
+    
+                  </a>
                 </li>
     
-                <li class="project-item  active" data-filter-item data-category="applications">
-                  
-                </li>
-    
                 <li class="project-item  active" data-filter-item data-category="web development">
-                  
+                  <a href="../movie-landing-page/src/App.js">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./asset/images/movie-landing-api.jpg" alt="orizon" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">Ansal Punya Film</h3>
+    
+                    <p class="project-category">Web development</p>
+    
+                  </a>
                 </li>
     
               </ul>
     
             </section>
     
-            </article>
+          </article>
     
-          <!--- #BLOG --->
-    
-            <article class="blog" data-page="blog">
-    
-            <header>
-              <h2 class="h2 article-title">Blog</h2>
-            </header>
-    
-            <section class="blog-posts">
-    
-              <ul class="blog-posts-list">
-    
-                <li class="blog-post-item">
-                  
-                </li>
-    
-                <li class="blog-post-item">
-                  
-              </ul>
-    
-            </section>
-    
-            </article>
+          
     
           <!--- #CONTACT --->
     
@@ -490,9 +539,32 @@
             <header>
               <h2 class="h2 article-title">Contact</h2>
             </header>
+            
+            <section class="contact-form">
+
+              <h3 class="h3 form-title">Contact Form</h3>
     
+              <form action="#" class="form" data-form>
+    
+                <div class="input-wrapper">
+                  <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+    
+                  <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                </div>
+    
+                <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    
+                <button class="form-btn" type="submit" disabled data-form-btn>
+                  <ion-icon name="paper-plane"></ion-icon>
+                  <span>Send Message</span>
+                </button>
+    
+              </form>
+    
+            </section>
+
             </article>
-    
+            
 
     </div>
   </main>
