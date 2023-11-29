@@ -19,8 +19,8 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 // custom select variables
 const select = document.querySelector("[data-page]");
-const selectItems = document.querySelectorAll("[data-page-item]");
-const selectValue = document.querySelector("[data-page-value]");
+const selectItems = document.querySelectorAll("[data-select-item]");
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
